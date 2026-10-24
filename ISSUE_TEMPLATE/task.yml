@@ -1,0 +1,34 @@
+name: Task
+description: Something to build or change
+labels: ["feature"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What is true when this is done? One or two sentences a player or developer could check.
+      placeholder: A player who rejoins within a minute keeps the coins they earned in the last session.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why now
+      description: The problem it solves or the number it should move. Link the card if there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Where it goes, what it depends on, what is out of scope.
+  - type: textarea
+    id: done-when
+    attributes:
+      label: Done when
+      description: Observable checks. A reviewer ticks each one.
+      value: |
+        - [ ] 
+    validations:
+      required: true
+

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-labelledby="title desc">
+  <title id="title">Blockout Games</title>
+  <desc id="desc">The Blockout Games cube mark beside the words: Independent Roblox studio. Blockout Games. Built for one more round.</desc>
+  <style>
+    .sans { font-family: 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+    @media (prefers-reduced-motion: no-preference) {
+      .bob { animation: bob 6s ease-in-out infinite; }
+      .float-a { animation: float 7s ease-in-out infinite; }
+      .float-b { animation: float 9s ease-in-out -3s infinite; }
+      .float-c { animation: float 8s ease-in-out -5s infinite; }
+      .pulse { animation: pulse 6s ease-in-out infinite; }
+    }
+    @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+    @keyframes pulse { 0%, 100% { opacity: 0.9; } 50% { opacity: 0.6; } }
+  </style>
+  <defs>
+    <pattern id="iso" width="69.282" height="40" patternUnits="userSpaceOnUse">
+      <path d="M0 0 L69.282 40 M69.282 0 L0 40 M34.641 0 V40" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1" fill="none"/>
+    </pattern>
+    <linearGradient id="gridFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.35"/>
+      <stop offset="0.45" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.7" stop-color="#fff" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="gridMask">
+      <rect width="1280" height="400" fill="url(#gridFade)"/>
+    </mask>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f97316" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="leftFace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff7a00"/>
+      <stop offset="1" stop-color="#f56a00"/>
+    </linearGradient>
+    <g id="mini">
+      <polygon points="0,0 17.32,10 0,20 -17.32,10" fill="none" stroke="#f97316" stroke-opacity="0.55" stroke-width="1.5" stroke-linejoin="round"/>
+      <polygon points="-17.32,10 0,20 0,40 -17.32,30" fill="none" stroke="#f97316" stroke-opacity="0.55" stroke-width="1.5" stroke-linejoin="round"/>
+      <polygon points="0,20 17.32,10 17.32,30 0,40" fill="none" stroke="#f97316" stroke-opacity="0.55" stroke-width="1.5" stroke-linejoin="round"/>
+    </g>
+    <g id="miniSolid">
+      <polygon points="0,0 17.32,10 0,20 -17.32,10" fill="#ff9a0a"/>
+      <polygon points="-17.32,10 0,20 0,40 -17.32,30" fill="#ff7300"/>
+      <polygon points="0,20 17.32,10 17.32,30 0,40" fill="#e44d02"/>
+    </g>
+  </defs>
+
+  <rect width="1280" height="400" fill="#0a0a0a"/>
+  <rect width="1280" height="400" fill="url(#iso)" mask="url(#gridMask)"/>
+  <circle class="pulse" cx="250" cy="205" r="200" fill="url(#glow)"/>
+
+  <!-- The cube mark, redrawn from BlockoutGames_Transparent.png (source coordinates 0..1254). -->
+  <g class="bob">
+    <g transform="translate(146 82) scale(0.31) translate(-282 -228)">
+      <polygon points="282,412 627,598 627,995 282,800" fill="url(#leftFace)"/>
+      <polygon points="627,598 972,412 972,800 627,995" fill="#e44d02"/>
+      <polygon points="627,228 972,412 627,598 282,412" fill="#ff9a0a"/>
+      <polygon points="348,412 627,265 627,568" fill="#ee6200"/>
+      <polygon points="627,265 906,412 627,568" fill="#e04e00"/>
+      <polygon points="627,465 722,515 627,568 532,515" fill="#cf4300"/>
+      <polyline points="348,412 627,568 906,412" fill="none" stroke="#ffffff" stroke-opacity="0.7" stroke-width="4" stroke-linejoin="round"/>
+      <polyline points="282,412 627,598 972,412" fill="none" stroke="#ffd08a" stroke-opacity="0.55" stroke-width="3" stroke-linejoin="round"/>
+      <line x1="627" y1="598" x2="627" y2="995" stroke="#ffb35c" stroke-opacity="0.45" stroke-width="3"/>
+    </g>
+  </g>
+
+  <!-- Greybox blocks: what a level looks like before it is dressed. -->
+  <g class="float-a"><use xlink:href="#mini" transform="translate(1010 92) scale(1.6)"/></g>
+  <g class="float-b"><use xlink:href="#mini" transform="translate(1150 170) scale(2.3)"/></g>
+  <g class="float-c"><use xlink:href="#miniSolid" transform="translate(1068 250) scale(1.1)"/></g>
+  <g class="float-a"><use xlink:href="#mini" transform="translate(1225 64) scale(0.9)"/></g>
+  <g class="float-b"><use xlink:href="#mini" transform="translate(955 268) scale(0.8)"/></g>
+
+  <g class="sans">
+    <circle cx="428" cy="134" r="4" fill="#f97316"/>
+    <text x="442" y="140" font-size="16" font-weight="600" letter-spacing="3" fill="#fb923c">INDEPENDENT ROBLOX STUDIO</text>
+    <text x="424" y="222" font-size="78" font-weight="800" letter-spacing="-2.5" fill="#fafafa">Blockout Games</text>
+    <text x="426" y="274" font-size="30" font-weight="500" letter-spacing="-0.5" fill="#a3a3a3">Built for one more round.</text>
+    <text x="427" y="322" font-size="16" font-weight="500" letter-spacing="1" fill="#737373">Block by block. Game by game.</text>
+  </g>
+</svg>
+

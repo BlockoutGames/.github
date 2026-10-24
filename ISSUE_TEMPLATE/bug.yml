@@ -1,0 +1,71 @@
+name: Bug
+description: Something is wrong
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for writing it down. **An exploit or a way to cheat?** Do not file it here: follow the
+        [security policy](https://github.com/BlockoutGames/.github/blob/main/SECURITY.md) instead.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you saw. Paste errors as text.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should have happened
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to see it
+      description: Numbered steps from joining (or from a fresh clone) to the bug. Say how often it happens.
+      placeholder: |
+        1. Join the testing place
+        2. Open the shop and buy the 100 coin pack
+        3. Rejoin: the coins are gone
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where
+      options:
+        - Live game
+        - Testing place
+        - Roblox Studio (local, through Rojo)
+        - Website (www.blockoutgames.com)
+        - Studio portal (studio.blockoutgames.com)
+        - Tooling or CI
+        - Somewhere else
+    validations:
+      required: true
+  - type: dropdown
+    id: devices
+    attributes:
+      label: Devices
+      description: Where you saw it, if it is in a game.
+      multiple: true
+      options:
+        - PC
+        - Mac
+        - Phone
+        - Tablet
+        - Console
+        - VR
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: The release (`v1.4.0`), the commit, or the place version shown in Roblox.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Screenshots, a short video, console output. Drag files in.
+

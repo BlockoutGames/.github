@@ -1,0 +1,9 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security problem or exploit
+    url: https://github.com/BlockoutGames/.github/security/advisories/new
+    about: Report it privately. Never open a public issue for an exploit.
+  - name: Help with one of our games
+    url: https://github.com/BlockoutGames/.github/blob/main/SUPPORT.md
+    about: Purchases, bugs and accounts for players.
+
